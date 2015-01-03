@@ -7,7 +7,7 @@ path = os.path.dirname(os.path.abspath(__file__)) + '/'
 #==========================================================
 # NmappahPahRappah - rap the webs
 # sudo scan.py
-# ip.txt should be in same directory (1 IPv4 per line)
+# targets.txt should be in same directory (1 IPv4 per line)
 #==========================================================
 # MySQL connection variables
 dbhost = "hostname"
@@ -23,7 +23,7 @@ def main():
     db = MySQLdb.connect(dbhost,dbuser,dbpass,dbname)
     cursor = db.cursor()
 
-    file = path + 'ips.txt' # path of targets file (1 IPv4 per line)
+    file = path + 'targets.txt' # path of targets file (1 IPv4 per line)
 
     #=== NMap Configuration Options ===#
     nm = nmap.PortScanner()
