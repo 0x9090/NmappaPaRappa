@@ -1,4 +1,4 @@
 NmappahPahRappah
 ================
 
-A crappy wrapper for mass ports scans
+A Python wrappah for mass ports scans
